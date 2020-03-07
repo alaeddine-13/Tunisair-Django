@@ -57,7 +57,6 @@ To develop such a project, here is the used tech stack:
 
 * [AngularJS](https://angularjs.org) - HTML enhanced for web apps!
 * [Django](https://www.djangoproject.com) - python framework for the backend REST API
-* [Flask](https://palletsprojects.com/p/flask/) - python framework for the backend REST API
 * [Scikit-learn](https://scikit-learn.org) - we used the `GradientBoostingRegressor` from the scikit-learn library to train and deploy the Gradient Boosting model
 
 
