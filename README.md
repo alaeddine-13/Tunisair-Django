@@ -51,7 +51,10 @@ Then run the script :
 python flood_rul/flood_sousse.py
 ```
 Keep pressing `Enter` to send new data points each time, meanwhile, you can observe the graph changing in real-time, until the aircraft becomes in the `in danger` status :
+
+
 [![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/flooding_demo_2.png)](https://alaeddineabdessalem.com/assets/img/projects/flooding_demo_2)[![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/flooding_demo_3.png)](https://alaeddineabdessalem.com/assets/img/projects/flooding_demo_3)[![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/flooding_demo_4.png)](https://alaeddineabdessalem.com/assets/img/projects/flooding_demo_4)
+
 ### Tech
 
 To develop such a project, here is the used tech stack:
