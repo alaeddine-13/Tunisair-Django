@@ -43,7 +43,9 @@ The Frontend is built using AngularJS. The single page web application keeps con
 ## Data ingestion scripts :
 The script `flood_rul/flood_sousse.py` will get sample sensor data from the dataset and consume the REST API to send the data. Since the last sensor values corresponds to a deteriorated engine, the aircraft will enter an `in danger` status and an email will be sent.
 To use the script, first delete the `RUL` data points from the frontend :
+
 [![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/clear_sousse.png)](https://alaeddineabdessalem.com/assets/img/projects/clear_sousse.png)
+
 Then run the script : 
 ```python
 python flood_rul/flood_sousse.py
@@ -53,7 +55,7 @@ python flood_rul/flood_sousse.py
 
 To develop such a project, here is the used tech stack:
 
-* [AngularJS] - HTML enhanced for web apps!
+* [AngularJS](https://angularjs.org) - HTML enhanced for web apps!
 * [Django](https://www.djangoproject.com) - python framework for the backend REST API
 * [Flask](https://palletsprojects.com/p/flask/) - python framework for the backend REST API
 * [Scikit-learn](https://scikit-learn.org) - we used the `GradientBoostingRegressor` from the scikit-learn library to train and deploy the Gradient Boosting model
