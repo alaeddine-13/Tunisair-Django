@@ -19,9 +19,11 @@ Therefore, building the project consisted in different steps :
 
 ## Model Training :
 We used the dataset provided in the Nasa repository for the Turbofan engine (check it [here](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#turbofan)). The dataset comes with a research paper, describing the dataset and sensors data.
+
 [![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/research_paper.png)](https://alaeddineabdessalem.com/assets/img/projects/research_paper.png)
 
 After training the model, accuracy was validated and plotted :
+
 [![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/model_training_result.png)](https://alaeddineabdessalem.com/assets/img/projects/model_training_result.png)
 
 ## REST API :
@@ -31,7 +33,8 @@ The REST API provides several endpoints listed below :
 [![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/aircraft_status_email.png)](https://alaeddineabdessalem.com/assets/img/projects/aircraft_status_email.png)
 This endpoint, is used by ingestion scripts to simulate aircrafts sending sensor data.
 3. `GET /api/aircraft` : This endpoint returns RUL datapoints for all aircrafts in database, to be shown in the main dashboard like so :
-4. [![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/aircrafts_dashboard.png)](https://alaeddineabdessalem.com/assets/img/projects/aircrafts_dashboard.png)
+
+[![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/aircrafts_dashboard.png)](https://alaeddineabdessalem.com/assets/img/projects/aircrafts_dashboard.png)
 5. `GET /api/flight/<int:day>/<int:month>/<int:year>` : This endpoint returns live data about flight in Tunis Carthage Airport. Data is scraped from the airport website in real-time and exposed in this endpoint.
 ## Frontend :
 The Frontend is built using AngularJS. The single page web application keeps consuming the webservice using crons, to keep real-time insights about aircrafts data and updated graphs.
