@@ -6,7 +6,7 @@ Tunisair APP is a web application built using Python as the backend technology a
 The project got us the first prize at the OpenGovDataHack2020 national hackathon.
 Getting the first place required us to train a predictive model using a `Gradient Boosting` model, deploy it on the cloud (`using AWS EC2 server and RDS PostgreSQL instance`) and integrate it in a dashboard to help the administration avoid unexpected component failures.
 
-The project is deployed and accessible through this [link](http://52.87.166.206)
+The project is deployed and accessible through this [link](http://http://54.159.195.75)
 
 [![N|Solid](https://alaeddineabdessalem.com/assets/img/achievements/opengovdatahack2020.jpg)](https://alaeddineabdessalem.com/assets/img/achievements/opengovdatahack2020.jpg)
 # Description
@@ -44,18 +44,19 @@ The Frontend is built using AngularJS. The single page web application keeps con
 The script `flood_rul/flood_sousse.py` will get sample sensor data from the dataset and consume the REST API to send the data. Since the last sensor values corresponds to a deteriorated engine, the aircraft will enter an `in danger` status and an email will be sent.
 To use the script, first delete the `RUL` data points from the frontend :
 
-[![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/clear_sousse.png)](https://alaeddineabdessalem.com/assets/img/projects/clear_sousse.png)
+[![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/clear_sousse.png)](https://alaeddineabdessalem.com/assets/img/projects/clear_sousse.png)[![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/flooding_demo_1.png)](https://alaeddineabdessalem.com/assets/img/projects/flooding_demo_1)
 
 Then run the script : 
 ```python
 python flood_rul/flood_sousse.py
 ```
-
+Keep pressing `Enter` to send new data points each time, meanwhile, you can observe the graph changing in real-time, until the aircraft becomes in the `in danger` status :
+[![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/flooding_demo_2.png)](https://alaeddineabdessalem.com/assets/img/projects/flooding_demo_2)[![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/flooding_demo_3.png)](https://alaeddineabdessalem.com/assets/img/projects/flooding_demo_3)[![N|Solid](https://alaeddineabdessalem.com/assets/img/projects/flooding_demo_4.png)](https://alaeddineabdessalem.com/assets/img/projects/flooding_demo_4)
 ### Tech
 
 To develop such a project, here is the used tech stack:
 
-* [AngularJS](https://angularjs.org) - HTML enhanced for web apps!
+* [Angular 8](https://angularjs.org) - HTML enhanced for web apps!
 * [Django](https://www.djangoproject.com) - python framework for the backend REST API
 * [Scikit-learn](https://scikit-learn.org) - we used the `GradientBoostingRegressor` from the scikit-learn library to train and deploy the Gradient Boosting model
 
