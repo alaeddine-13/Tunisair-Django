@@ -5,11 +5,10 @@ import json
 
 import  sqlalchemy as db
 import sys
+import os
 
 
-DB="postgres://opengovdatahackdb.cec7rz0ixyvl.us-east-1.rds.amazonaws.com:5432/postgres?user=dev&password=12345678"
-
-
+DB=os.getenv("DB")
 
 target_var = ['Target_Remaining_Useful_Life']
 index_columns_names =  ["aircraftId","Cycle"]
@@ -59,7 +58,7 @@ if(len(result)>0):
 	print(aircraft)
 for record in result:
 	input("insert next")
-	resp = rq.post('http://18.212.69.214:5000/api/aircraft/{}'.format(aircraft),headers=headers, data= json.dumps(record))
+	resp = rq.post('http://54.159.195.75:5000/api/aircraft/{}'.format(aircraft),headers=headers, data= json.dumps(record))
 	print(resp.text)
 
 
