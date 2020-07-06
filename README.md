@@ -6,7 +6,6 @@ Tunisair APP is a web application built using Python as the backend technology a
 The project got us the first prize at the OpenGovDataHack2020 national hackathon.
 Getting the first place required us to train a predictive model using a `Gradient Boosting` model, deploy it on the cloud (`using AWS EC2 server and RDS PostgreSQL instance`) and integrate it in a dashboard to help the administration avoid unexpected component failures.
 
-The project is deployed and accessible through this [link](http://54.159.195.75)
 
 [![N|Solid](https://alaeddineabdessalem.com/assets/img/achievements/opengovdatahack2020.jpg)](https://alaeddineabdessalem.com/assets/img/achievements/opengovdatahack2020.jpg)
 # Description
