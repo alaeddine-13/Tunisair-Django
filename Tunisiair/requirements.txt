@@ -1,6 +1,6 @@
 beautifulsoup4==4.7.1
 Click==7.0
-Jinja2==2.10
+Jinja2==2.11.3
 joblib==0.14.1
 Keras==2.2.5
 Keras-Applications==1.0.8
